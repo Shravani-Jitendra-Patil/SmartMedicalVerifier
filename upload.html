@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Medical Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+    console.log("Script Loaded");
+  </script>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">🩺 Smart Medical Verifier</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="upload.html" class="active">Upload</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="upload-section">
+    <div class="container upload-box">
+      <h2>📤 Upload Your Medical Document</h2>
+      <p class="upload-subtext">Supported formats: PDF, JPG, JPEG, PNG. Your document will be verified using AI & smart contracts.</p>
+      <form id="uploadForm">
+        <input type="file" id="file" accept=".pdf,.jpg,.jpeg,.png" required />
+        <button type="submit" class="btn">Verify & Upload</button>
+        <p id="message"></p>
+      </form>
+      <div id="preview"></div>
+      
+      
+     
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Medical Verifier. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
